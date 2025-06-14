@@ -49,7 +49,7 @@ Copy
 Edit
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ###  API Endpoints
-## 1. POST /query
+#### 1. POST /query
 Submit a text/image-based question.
 
 Request
@@ -73,7 +73,7 @@ Edit
     }
   ]
 }
-### 2. GET /health
+#### 2. GET /health
 Check server and DB status.
 
 Response
