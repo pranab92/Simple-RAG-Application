@@ -30,26 +30,26 @@ This API implements a **Retrieval-Augmented Generation (RAG)** system that combi
    ```bash
    git clone https://github.com/your-username/RAG-Query-API.git
    cd RAG-Query-API
-Install dependencies:
+### Install dependencies:
 
 bash
 Copy
 Edit
 pip install fastapi uvicorn sqlite3 numpy aiohttp python-dotenv
-Create a .env file:
+### Create a .env file:
 
 env
 Copy
 Edit
 API_KEY=your_openai_api_key_here
-▶️ Usage
+## ▶️ Usage
 Running the API
 bash
 Copy
 Edit
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-🔌 API Endpoints
-1. POST /query
+###  API Endpoints
+## 1. POST /query
 Submit a text/image-based question.
 
 Request
@@ -73,7 +73,7 @@ Edit
     }
   ]
 }
-2. GET /health
+### 2. GET /health
 Check server and DB status.
 
 Response
@@ -89,7 +89,7 @@ Edit
   "discourse_embeddings": 100,
   "markdown_embeddings": 50
 }
-🧪 Example Requests
+## 🧪 Example Requests
 Text Query (cURL)
 bash
 Copy
@@ -97,7 +97,7 @@ Edit
 curl -X POST http://localhost:8000/query \
   -H "Content-Type: application/json" \
   -d '{"question":"What is the course structure for Machine Learning?"}'
-Multimodal Query (Python)
+## Multimodal Query (Python)
 python
 Copy
 Edit
@@ -111,31 +111,31 @@ response = requests.post("http://localhost:8000/query", json={
     "image": encoded
 })
 print(response.json())
-⚙️ Configuration
+### ⚙️ Configuration
 Environment Variables
 Variable	Description	Default
 API_KEY	OpenAI API Key	Required
 DB_PATH	Path to SQLite DB	knowledge_base.db
 
-Tuning Parameters
-Parameter	Description	Default
+### Tuning Parameters
+## Parameter	Description	Default
 SIMILARITY_THRESHOLD	Minimum similarity to include context	0.50
 MAX_RESULTS	Max number of results to return	10
 MAX_CONTEXT_CHUNKS	Max chunks per document	4
 
-🗃️ Database Schema
+### 🗃️ Database Schema
 discourse_chunks: Stores content + metadata + embeddings from Discourse.
 
 markdown_chunks: Same structure for Markdown documentation.
 
-❗ Error Handling
-Common error types:
+### ! Error Handling
+## Common error types:
 
 401 Unauthorized: Missing or invalid API_KEY
 
 500 Internal Server Error: Processing or DB errors
 
-🛠️ Troubleshooting
+### 🛠️ Troubleshooting
 Issue	Resolution
 Auth Errors	Check .env and API_KEY
 DB Connection	Ensure knowledge_base.db exists and is populated
