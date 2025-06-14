@@ -1,4 +1,4 @@
-# RAG Query API - Documentation
+# RAG Query API ( Virtual Assistant - TA)  - Documentation
 
 ## 📘 Overview
 
