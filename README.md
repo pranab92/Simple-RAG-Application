@@ -119,9 +119,9 @@ DB_PATH	Path to SQLite DB	knowledge_base.db
 
 ### Tuning Parameters
 ## Parameter	Description	Default
-SIMILARITY_THRESHOLD	Minimum similarity to include context	0.50
-MAX_RESULTS	Max number of results to return	10
-MAX_CONTEXT_CHUNKS	Max chunks per document	4
+SIMILARITY_THRESHOLD :	Minimum similarity to include context	0.50
+MAX_RESULTS :	Max number of results to return	10
+MAX_CONTEXT_CHUNKS :	Max chunks per document	4
 
 ### 🗃️ Database Schema
 discourse_chunks: Stores content + metadata + embeddings from Discourse.
@@ -131,12 +131,11 @@ markdown_chunks: Same structure for Markdown documentation.
 ### ! Error Handling
 ## Common error types:
 
-401 Unauthorized: Missing or invalid API_KEY
-
-500 Internal Server Error: Processing or DB errors
+- 401 Unauthorized: Missing or invalid API_KEY
+- 500 Internal Server Error: Processing or DB errors
 
 ### 🛠️ Troubleshooting
-Issue	Resolution
-Auth Errors	Check .env and API_KEY
-DB Connection	Ensure knowledge_base.db exists and is populated
-Slow Responses	Lower MAX_RESULTS, increase SIMILARITY_THRESHOLD
+Issue	Resolution 
+Auth Errors	Check .env and API_KEY 
+DB Connection	Ensure knowledge_base.db exists and is populated 
+Slow Responses	Lower MAX_RESULTS, increase SIMILARITY_THRESHOLD 
