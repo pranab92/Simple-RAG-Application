@@ -4,7 +4,7 @@ build/
 Archive/
 # Local configuration file (sdk path, etc)
 local.properties
-
+myTDSVirtuleEnv/
 # Log/OS Files
 *.log
 
