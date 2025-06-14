@@ -1,7 +1,7 @@
 # Gradle files
 .gradle/
 build/
-
+Archive/
 # Local configuration file (sdk path, etc)
 local.properties
 
@@ -15,19 +15,15 @@ captures/
 *.apk
 output-metadata.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Ignore directories
+downloaded_threads/
+markdown_files/
+__pycache__/*
+venv/
+.venv/
 
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Ignore files
+.env
+preprocess.py
+*.pyc
+.DS_Store
