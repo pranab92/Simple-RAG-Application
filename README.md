@@ -135,7 +135,7 @@ markdown_chunks: Same structure for Markdown documentation.
 - 500 Internal Server Error: Processing or DB errors
 
 ### 🛠️ Troubleshooting
-Issue	Resolution 
-Auth Errors	Check .env and API_KEY 
-DB Connection	Ensure knowledge_base.db exists and is populated 
-Slow Responses	Lower MAX_RESULTS, increase SIMILARITY_THRESHOLD 
+-Issue	Resolution 
+-Auth Errors	Check .env and API_KEY 
+-DB Connection	Ensure knowledge_base.db exists and is populated 
+-Slow Responses	Lower MAX_RESULTS, increase SIMILARITY_THRESHOLD 
